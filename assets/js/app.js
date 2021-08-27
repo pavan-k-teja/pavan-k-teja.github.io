@@ -23,7 +23,9 @@ if(localStorage.getItem("lightMode") == "dark")
      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
      <li class="nav-item"><a class="nav-link" href="projects.html">Skills & Projects</a></li>
      <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-     <li class="nav-item"><a class="nav-link" href="./assets/docs/john_doe.pdf" target="_blank">Resume</a></li>
+     <li class="nav-item"><a class="nav-link" href="404.html" target="_blank">Resume</a></li>
+     
+
      <li class="nav-item">
      <input id="toggle_mode_btn" type="checkbox" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" checked>
      </li>
@@ -123,7 +125,8 @@ else
      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
      <li class="nav-item"><a class="nav-link" href="projects.html">Skills & Projects</a></li>
      <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-     <li class="nav-item"><a class="nav-link" href="./assets/docs/john_doe.pdf" target="_blank">Resume</a></li>
+     <li class="nav-item"><a class="nav-link" href="404.html" target="_blank">Resume</a></li>
+     <-- <li class="nav-item"><a class="nav-link" href="./assets/docs/resume.pdf" target="_blank">Resume</a></li> -->
      <li class="nav-item">
      <input id="toggle_mode_btn" type="checkbox" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" >
      </li>
