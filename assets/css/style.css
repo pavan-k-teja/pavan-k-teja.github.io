@@ -822,7 +822,7 @@ form {
     background: transparent;
     margin-bottom: 4%;
     border: #000;
-    border-bottom: 2px solid #BB86FC;
+    /* border-bottom: 2px solid #BB86FC; */
     padding: 3%;
     color: rgb(107, 105, 105);
     font: 95% Arial, Helvetica, sans-serif;
@@ -854,7 +854,7 @@ form {
     margin-top: 2rem;
     padding: 3%;
     background: #BB86FC;
-    border-bottom: 2px solid #BB86FC;
+    /* border-bottom: 2px solid #BB86FC; */
     border-radius: 23px;
     border-top-style: none;
     border-right-style: none;
