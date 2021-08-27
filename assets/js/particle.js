@@ -20,11 +20,6 @@ particlesJS('particles-js', {
 			},
 			polygon: {
 				nb_sides: 5
-			},
-			image: {
-				src: 'https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png',
-				width: 100,
-				height: 100
 			}
 		},
 		
@@ -39,7 +34,7 @@ particlesJS('particles-js', {
 			}
 		},
 		size: {
-			value: 8,
+			value: 9,
 			random: true,
 			anim: {
 				enable: false,
@@ -57,7 +52,7 @@ particlesJS('particles-js', {
 		},
 		move: {
 			enable: true,
-			speed: 5,
+			speed: 3,
 			direction: 'none',
 			random: false,
 			straight: false,
@@ -75,7 +70,7 @@ particlesJS('particles-js', {
 		events: {
 			onhover: {
 				enable: true,
-				mode: 'repulse'
+				mode: ['repulse']
 			},
 			onclick: {
 				enable: true,
@@ -83,6 +78,12 @@ particlesJS('particles-js', {
 			}
 		},
 		modes: {
+			"grab": {
+				"distance": 100,
+				"line_linked": {
+				  "opacity": 1
+				}
+			},
 			'repulse' : {
 				distance: 70,
 				duration: 0.4

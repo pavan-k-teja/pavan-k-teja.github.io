@@ -130,7 +130,8 @@ body{
   background-color: #fff;
   margin: 8px;
   border-radius: 50%;
-  box-shadow: 2px 5px 5px var(--shadow-col);
+  /* box-shadow: 2px 5px 5px var(--shadow-col); */
+  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
   text-decoration: none;
   transition: var(--trans-props);
 }
