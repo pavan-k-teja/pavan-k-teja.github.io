@@ -47,7 +47,8 @@ const moocscards = [
   {
     title: "Intro to React Native",
     cardImage: "assets/images/education-page/coursera1.png",
-    moocLink: "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
+    moocLink:
+      "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
   },
   {
     title: "NodeJS, Express and MongoDB",
@@ -62,57 +63,56 @@ const moocscards = [
   {
     title: "Data Structures & Algorithms",
     cardImage: "assets/images/education-page/udacity_logo.png",
-    moocLink: "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
+    moocLink:
+      "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
   },
 ];
 
 const experience = [
   {
-    img: "assets/images/education-page/c1.png"
+    img: "assets/images/education-page/c1.png",
   },
   {
-    img: "assets/images/education-page/c2.jpg"
+    img: "assets/images/education-page/c2.jpg",
   },
   {
-    img: "assets/images/education-page/c3.png"
+    img: "assets/images/education-page/c3.png",
   },
   {
-    img: "assets/images/education-page/c4.png"
+    img: "assets/images/education-page/c4.png",
   },
   {
-    img: "assets/images/education-page/c5.jpg"
+    img: "assets/images/education-page/c5.jpg",
   },
 ];
 
 let currentItem = 0;
 
-const img = document.getElementById('image');
+const img = document.getElementById("image");
 
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
 
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener("DOMContentLoaded", function () {
   showExperience();
-})
+});
 
 function showExperience() {
   setInterval(function () {
     if (currentItem === experience.length) {
       currentItem = 0;
     }
-      const item = experience[currentItem];
-      img.src = item.img;
-      currentItem++;
-
-    },
-    3000);
+    const item = experience[currentItem];
+    img.src = item.img;
+    currentItem++;
+  }, 3000);
 }
 
 const showCards = () => {
   let output = "";
   moocscards.forEach(
     ({ title, cardImage, moocLink }) =>
-    (output += `        
+      (output += `        
         <div class="col-6 col-md-3 col-sm-4 column" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >  
             <div class="card mb-3 mx-auto">
                <div class="content">
@@ -132,7 +132,6 @@ const showCards = () => {
   moocs.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards);
-
 
 /* Badges*/
 
@@ -159,7 +158,7 @@ const showCards1 = () => {
   let output = "";
   badgesection.forEach(
     ({ title, image, description }) =>
-    (output += `       
+      (output += `       
       <div class="col-lg-4 col-md-6 p-2" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600"> 
         <img class="img-fluid d-block mb-3 mx-auto hvr-grow" src="${image}" alt="Card image cap" width="200">
           <div class="text-center font-weight-bolder" style="font-size: 1.3em;">${title}</div>
@@ -170,37 +169,30 @@ const showCards1 = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards1);
 
-
 /* Timeline Section*/
 
-const timeline = document.querySelector(".timeline");
+const timeline = document.querySelector(".timeline-container");
 const timelinesection = [
   {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
+    heading: "Indian Institute of Information Technology, Sri City",
+    image: "assets/images/education-page/iiits.png",
+    subheading:
+      "Bachelor of Technology, Computer Science & Engineering, (2019-2023)",
+    description: ""
   },
 
   {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
+    heading: "FIITJEE Junior College, Saifabad",
+    image: "assets/images/education-page/fiitjee.svg",
+    subheading: "Intermediate, MPC-Stream, T.S.B.I.E, (2017-2019)",
+    description: ""
   },
 
   {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
-  },
-
-  {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
+    heading: "Dr. K.K.R's Gowtham Concept School, ECIL",
+    image: "assets/images/education-page/kkr.png",
+    subheading: "10th Standard, C.B.S.E, (2016-2017)",
+    description: ""
   },
 ];
 
@@ -208,27 +200,21 @@ const showCards2 = () => {
   let output = "";
   timelinesection.forEach(
     ({ heading, image, subheading, description }) =>
-    (output += `       
-      <div class="timeline" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
-      <div class="timeline-content">
-        <h6 class="center-align font-weight-bolder pt-1">${heading}</h6>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <img src="${image}" alt="" height="110"
-              class=" mt-2 w-100 mx-auto">
-          </div>
-          <div class="col-lg-8 col-md-8 col-sm-8 px-4">
-            <span style="opacity: 0.9; font-size: 15px;">
-              ${subheading}
-            </span>
-            <h6 class="text-muted mt-2" style="font-size: small;">Activities:</h6>
-            <ol style="margin-top: -8px; margin-left: -10px; font-size: 12px; list-style: disc;">
-              ${description}
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>`)
+      (output += `       
+    <div class="timeline-item">
+    <div class="timeline-img">
+        
+    </div>
+    <div class="timeline-content js--fadeInLeft">
+        <img src="${image}" width="170px">
+    <div class="timeline-content-text">
+      <h2>${heading}</h2>
+      <h6>${subheading}</h6>
+      <p>${description}</p>
+     
+    </div>
+    </div>
+  </div>`)
   );
   timeline.innerHTML = output;
 };

@@ -287,6 +287,15 @@ html[light-mode="dark"] {
 .dark-theme .navbar-nav .nav-link,
 .dark-theme .navbar-brand {
     color: rgba(255, 255, 255, 0.5);
+    
+}
+
+.dark-theme .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000, 
+                  1px -1px 0 #000, 
+                 -1px -1px 0 #000;
 }
 
 .dark-theme .first,
