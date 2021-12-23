@@ -17,8 +17,8 @@ const projects = [
     cardImage: "assets/images/project-page/student-dashboard.png",
     description: "A student friendly site to manage their academics. ",
     tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
-    Previewlink: "/404.html",
-    Githublink: "/404.html",
+    Previewlink: "https://beneficent-dash.herokuapp.com/",
+    Githublink: "https://github.com/pavan-k-teja/Student-Dashboard",
   },
   {
     title: "Pocket Cube Solver",
