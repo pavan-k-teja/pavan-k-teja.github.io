@@ -5,6 +5,22 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
+    title: "Student Dashboard",
+    cardImage: "assets/images/project-page/student-dashboard.png",
+    description: "A student friendly site to manage their academics.",
+    tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
+    Previewlink: "https://beneficent-dashboard.onrender.com/",
+    Githublink: "https://github.com/pavan-k-teja/Student-Dashboard",
+  },
+  {
+    title: "Kickstart",
+    cardImage: "assets/images/project-page/kickstart.jpg",
+    description: "Website to help entrepreneurs buy or sell startups.",
+    tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
+    Previewlink: "https://kickstart-client.vercel.app/",
+    Githublink: "https://github.com/pavan-k-teja/Kickstart",
+  },
+  {
     title: "Ethereum Marketplace",
     cardImage: "assets/images/project-page/ethereum.jpg",
     description: "A marketplace powered by blockchain technology.",
@@ -13,20 +29,12 @@ const projects = [
     Githublink: "https://github.com/pavan-k-teja/ethereum-marketplace",
   },
   {
-    title: "Student Dashboard",
-    cardImage: "assets/images/project-page/student-dashboard.png",
-    description: "A student friendly site to manage their academics. ",
-    tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
-    Previewlink: "https://beneficent-dash.herokuapp.com/",
-    Githublink: "https://github.com/pavan-k-teja/Student-Dashboard",
-  },
-  {
     title: "Pocket Cube Solver",
     cardImage: "assets/images/project-page/cube.jpg",
     description: "API to get all optimal solutions of a given pocket cube position.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "https://pocket-cube-solution-finder.herokuapp.com/",
-    Githublink: "https://github.com/pavan-k-teja/pocket-cube-solution-finder",
+    Previewlink: "https://pocket-cube-solver.vercel.app/",
+    Githublink: "https://github.com/pavan-k-teja/pocket-cube-solver",
   },
   {
     title: "Meme Share",
