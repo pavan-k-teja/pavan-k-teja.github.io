@@ -338,7 +338,7 @@ let footer = $(`
 //"Scroll to top" button
 let upArrow = $(`
   <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   })
 `);
 
