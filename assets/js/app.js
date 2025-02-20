@@ -3,8 +3,7 @@
 
 let header = "";
 
-if(localStorage.getItem("lightMode") == "dark")
-{
+if (localStorage.getItem("lightMode") == "dark") {
   header = $(`
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
   <a class="navbar-brand" href="index.html">Pavan Sai Teja K</a>
@@ -23,7 +22,7 @@ if(localStorage.getItem("lightMode") == "dark")
      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
      <li class="nav-item"><a class="nav-link" href="projects.html">Skills & Projects</a></li>
      <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-     <li class="nav-item"><a class="nav-link" href="./assets/docs/resume.pdf" target="_blank">Resume</a></li>
+     <li class="nav-item"><a class="nav-link" href="./resume.pdf" target="_blank">Resume</a></li>
      
 
      <li class="nav-item">
@@ -105,8 +104,7 @@ if(localStorage.getItem("lightMode") == "dark")
   </div>
   </nav>`);
 }
-else
-{
+else {
   header = $(`
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
   <a class="navbar-brand" href="index.html">Pavan Sai Teja K</a>
@@ -125,7 +123,7 @@ else
      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
      <li class="nav-item"><a class="nav-link" href="projects.html">Skills & Projects</a></li>
      <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-     <li class="nav-item"><a class="nav-link" href="./assets/docs/resume.pdf" target="_blank">Resume</a></li>
+     <li class="nav-item"><a class="nav-link" href="./resume.pdf" target="_blank">Resume</a></li>
      
      <li class="nav-item">
      <input id="toggle_mode_btn" type="checkbox" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" >
@@ -443,7 +441,7 @@ $(function () {
 if (localStorage.getItem("lightMode") == "dark") {
   var app = document.getElementsByTagName("HTML")[0];
   app.setAttribute("light-mode", "dark");
-  
+
   //to add dark theme to nav bar after its been loaded
   window.addEventListener("load", function () {
     var nav = document.getElementById("navbar");
@@ -479,17 +477,17 @@ function toggle_light_mode() {
     app.setAttribute("light-mode", "light");
     nav.classList.remove("dark-theme");
     var sc = document.getElementsByClassName("socialicon");
-    for(var i=0; i<sc.length; i++) {
+    for (var i = 0; i < sc.length; i++) {
       sc[i].classList.remove("dsc");
-   }
+    }
   } else {
     localStorage.setItem("lightMode", "dark");
     app.setAttribute("light-mode", "dark");
     nav.classList.add("dark-theme");
     var sc = document.getElementsByClassName("socialicon");
-    for(var i=0; i<sc.length; i++) {
+    for (var i = 0; i < sc.length; i++) {
       sc[i].classList.add("dsc");
-   }
+    }
   }
 }
 
@@ -503,10 +501,10 @@ window.addEventListener("storage", function () {
 }, false);
 
 // Function to remove scroll bar during preload
-$(window).on('load', function() {
-  setTimeout(function(){
+$(window).on('load', function () {
+  setTimeout(function () {
     $('.no-scroll-preload').css('overflow', 'visible');
-  },1000);
+  }, 1000);
   $('.loader-container').fadeOut(2500);
 });
 

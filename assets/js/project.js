@@ -5,6 +5,15 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
+    title: "S-Process Funding",
+    // cardImage: "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1629337707/Space_Colonization_Architecture5_e8uuty.png",
+    cardImage: "https://static.wixstatic.com/media/3e0e39_afc49c164de547d182b15640f16256c6~mv2.png",
+    description: "A student friendly site to manage their academics.",
+    tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
+    Previewlink: "https://beneficent-dashboard.onrender.com/",
+    Githublink: "https://github.com/pavan-k-teja/Student-Dashboard",
+  },
+  {
     title: "Student Dashboard",
     cardImage: "assets/images/project-page/student-dashboard.png",
     description: "A student friendly site to manage their academics.",
@@ -25,7 +34,7 @@ const projects = [
     cardImage: "assets/images/project-page/ethereum.jpg",
     description: "A marketplace powered by blockchain technology.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "",  
+    Previewlink: "",
     Githublink: "https://github.com/pavan-k-teja/ethereum-marketplace",
   },
   {
