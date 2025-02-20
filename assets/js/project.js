@@ -8,10 +8,10 @@ const projects = [
     title: "S-Process Funding",
     // cardImage: "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1629337707/Space_Colonization_Architecture5_e8uuty.png",
     cardImage: "https://static.wixstatic.com/media/3e0e39_afc49c164de547d182b15640f16256c6~mv2.png",
-    description: "A student friendly site to manage their academics.",
+    description: "Adding collaborative decision-making in funding allocations.",
     tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
-    Previewlink: "https://beneficent-dashboard.onrender.com/",
-    Githublink: "https://github.com/pavan-k-teja/Student-Dashboard",
+    Previewlink: "https://s-process-funding.vercel.app/",
+    Githublink: "https://github.com/pavan-k-teja/s_process_funding",
   },
   {
     title: "Student Dashboard",
