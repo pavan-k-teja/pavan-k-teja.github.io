@@ -26,7 +26,7 @@ window.onload = function () {
         favicon.href = "./assets/images/code_favicon.svg";
     } else {
         document.title = attentionMessage;
-        favicon.href = "./assets/images/hand.gif";
+        favicon.href = "./assets/images/code_favicon.svg";
     }
   }   
 };
